@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+@import "./variables";
+
 body {
-    font-family: 'emoji'
+    font-family: 'emoji';
+    background-color: $black-clr;
+    color: $white-clr;
 }
