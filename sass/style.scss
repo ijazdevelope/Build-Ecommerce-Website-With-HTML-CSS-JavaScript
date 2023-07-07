@@ -10,8 +10,37 @@
 @import './mixins';
 
 body {
-    font-family: 'emoji';
-    background-color: $black-clr;
-    color: $white-clr;
-    @include flex_center;
+    font-family: $poppins-font-family, sans-serif;
+}
+
+@import './navbar';
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $eerie-black;
+}
+
+h6 {
+    color: $light-silver;
 }
