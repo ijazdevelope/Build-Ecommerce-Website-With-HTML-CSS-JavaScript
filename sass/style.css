@@ -10,4 +10,7 @@ body {
   font-family: "emoji";
   background-color: #333;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
