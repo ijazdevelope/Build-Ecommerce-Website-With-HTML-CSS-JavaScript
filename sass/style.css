@@ -31,6 +31,9 @@ body {
 .navbar .navbar-nav i:hover, .navbar .navbar-nav i:active {
   color: #ff7f50;
 }
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:active {
+  box-shadow: none;
+}
 
 #home {
   align-items: flex-start;

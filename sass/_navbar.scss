@@ -28,6 +28,15 @@
             }
         }
     }
+
+    // for mobile menu
+
+    .navbar-toggler {
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+    }
 }
 
 #home {
