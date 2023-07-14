@@ -1,10 +1,26 @@
 @mixin flex_center { 
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 @mixin transition($duration: 0.3s, $timing: ease) {
     transition: $duration $timing;
+}
+
+@mixin custom_button {
+    background-color: $earie-black;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    padding: 0.813rem 1.875rem;
+    text-transform: uppercase;
+    @include transition;
+
+    &:hover {
+        background-color: $black-olive;
+    }
 }
 
