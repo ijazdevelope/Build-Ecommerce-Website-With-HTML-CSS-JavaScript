@@ -14,8 +14,8 @@ body {
   font-size: 1rem;
 }
 .navbar .navbar-nav, .navbar .navbar-nav .nav-link {
-  padding: 0 1.25rem;
   color: #000000;
+  padding: 0 1.25rem;
   transition: 0.3s ease;
 }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active {
@@ -30,6 +30,34 @@ body {
 }
 .navbar .navbar-nav i:hover, .navbar .navbar-nav i:active {
   color: #ff7f50;
+}
+
+#home {
+  align-items: flex-start;
+  background: url("../assets/images/back.jpg") no-repeat center 4rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+#home span {
+  color: #ff7f50;
+}
+#home button {
+  background-color: #1d1d1d;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  padding: 0.813rem 1.875rem;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+#home button:hover {
+  background-color: #33353A;
 }
 
 h1 {
@@ -53,9 +81,9 @@ h4 {
 }
 
 h5 {
+  color: #1d1d1d;
   font-size: 1rem;
   font-weight: 400;
-  color: #1d1d1d;
 }
 
 h6 {

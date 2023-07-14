@@ -2,8 +2,8 @@
     font-size: 1rem;
 
     .navbar-nav {
-        padding: 0 1.25rem;
         color: $black-clr;
+        padding: 0 1.25rem;
         @include transition;
 
         .nav-link {
@@ -29,3 +29,23 @@
         }
     }
 }
+
+#home {
+    align-items: flex-start;
+    background: url('../assets/images/back.jpg') no-repeat center 4rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    span {
+        color: $coral-clr;
+    }
+
+    button {
+        @include custom_button;
+    }
+}
+
