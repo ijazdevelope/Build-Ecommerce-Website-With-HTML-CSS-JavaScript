@@ -44,3 +44,80 @@ h5 {
 h6 {
     color: $light-silver;
 }
+
+// global styles for buttona and link buttons
+.btn {
+    @include custom_button;
+}
+
+// details section
+#details {
+
+    .wrapper {
+        cursor: pointer;
+        overflow: hidden;
+
+        .details {
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &:hover {
+            .details {
+                background-color: rgba(245, 178, 178, .7);
+                color: $white-clr;
+
+                a {
+                    color: $white-clr;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .details {
+                align-items: center;
+            }
+        }
+
+        &:nth-child(3) {
+            .details {
+                align-items: end;
+            }
+        }
+    }
+
+    .details {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        @include transition;
+        width: 100%;
+
+        h2 {
+            margin: 1rem;
+        }
+
+        .btn {
+            background-color: transparent;
+            border-bottom: 1px solid;
+            border-radius: 0;
+            color: $details-btn;
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin: 0 1rem 0;
+            padding: .3rem;
+
+            &:hover {
+                background-color: $coral-clr;
+                color: $white-clr;
+                border-radius: 0.2rem;
+                @include transition;
+                padding: .5rem;
+            }
+        }
+    }
+
+}
