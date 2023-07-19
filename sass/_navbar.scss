@@ -53,7 +53,7 @@
         color: $coral-clr;
     }
 
-    button {
+    a {
         @include custom_button;
     }
 }
